@@ -2,6 +2,50 @@
 
 # Multi-modal Patient Data Processing Strategy
 
+
+
+# MultiOmicsEmbeddings: Multi-Modal Analysis Pipeline for Myeloma
+
+A deep learning pipeline for integrating and analyzing multiple modalities of myeloma genomic data, including CNV, expression, SNV, and fusion data.
+
+## Overview
+
+This pipeline implements a multi-modal deep learning approach to analyze myeloma genomic data by:
+- Integrating multiple data types (CNV, expression, SNV, fusion, etc.)
+- Learning specialized encodings for each data modality
+- Leveraging cross-modal attention for feature interaction
+- Producing unified patient embeddings for downstream analysis
+
+```mermaid
+flowchart TD
+    subgraph InputData["Input Data Files"]
+        CSV1["COMMPASS_full_cnvBroad.csv"]
+        CSV2["CNV Focal CSV"]
+        CSV3["Expression CSV"]
+        CSV4["SNV CSV"]
+        CSV5["Fusion CSV"]
+        CSV6["Trans CSV"]
+    end
+
+    subgraph DatasetClass["MyelomaDataset Constructor"]
+        P1["Load into Pandas"]
+        P2["Drop 'Unnamed:0'"]
+        P3["StandardScaler/Float32 Cast"]
+        Arrays["Arrays Storage"]
+    end
+
+    subgraph ModelArchitecture["MyelomaMultiModalModel.forward"]
+        E1["Encoder: cnv_broad"]
+        E2["Encoder: cnv_focal"]
+        E3["Encoder: expression"]
+        E4["Encoders: snv, fusion, trans"]
+        Stack["Stack Encodings"]
+        Attention["Cross Modal Attention"]
+        Unify["Final Unify MLP"]
+    end
+
+    InputData --> DatasetClass --> ModelArchitecture
+
 ## CNV (Copy Number Variation) Data
 | Aspect | Description | Rationale |
 |--------|-------------|-----------|
