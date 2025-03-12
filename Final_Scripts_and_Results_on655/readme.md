@@ -133,6 +133,8 @@ Below is a summary of 16 runs:
 3. **Subset vs. All**:
    - Using **all** modalities can be noisier, but sometimes yields better t-SNE silhouette (e.g. run #13).
    - Restricting to `expression,cnv_broad` can help UMAP silhouette (e.g. run #2).
-4. If you have **clinical labels** or known subtypes, check which clusters align with biologically meaningful groups. Silhouette alone might not tell the full story.
+
+## Future work 
+1. If you have **clinical labels** or known subtypes, check which clusters align with biologically meaningful groups. Silhouette alone might not tell the full story -> We have availability of Sherry subgroup labels(which will help in future works)
 
 ---
