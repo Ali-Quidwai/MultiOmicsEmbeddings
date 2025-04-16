@@ -1,0 +1,2 @@
+output_prefix,silhouette_umap,silhouette_tsne,num_umap_clusters,num_tsne_clusters
+grid_run_6_all_500g_8bs_20ep_k12_hdb12,0.026357634,0.112786725,9,12

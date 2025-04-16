@@ -1,0 +1,2 @@
+output_prefix,silhouette_umap,silhouette_tsne,num_umap_clusters,num_tsne_clusters
+grid_run_22_expression_cnv_broad_2000g_8bs_10ep_k12_hdb12,0.07213399,0.081370406,3,12

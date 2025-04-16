@@ -1,0 +1,2 @@
+output_prefix,silhouette_umap,silhouette_tsne,num_umap_clusters,num_tsne_clusters
+grid_run_8_expression_cnv_focal_500g_8bs_20ep_k12_hdb12,0.0017914941,0.105126746,12,12
