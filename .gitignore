@@ -9,6 +9,7 @@ __pycache__/
 env/
 venv/
 PSN_AI_env/
+requirements.txt
 
 # VS Code / Mac system files
 .vscode/
@@ -19,7 +20,7 @@ PSN_AI_env/
 *.ipynb
 
 # DATA
-COMMPASS_655_data/
+Alison/COMMPASS_655_data/
 
 # Output files from grid search / runs
 #*_embeddings.csv
