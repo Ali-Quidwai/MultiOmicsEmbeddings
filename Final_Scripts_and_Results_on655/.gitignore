@@ -1,0 +1,43 @@
+# Python cache and virtual envs
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+.env/
+.venv/
+env/
+venv/
+PSN_AI_env/
+
+# VS Code / Mac system files
+.vscode/
+.DS_Store
+
+# Jupyter/IPython
+.ipynb_checkpoints/
+*.ipynb
+
+# DATA
+COMMPASS_655_data/
+
+# Output files from grid search / runs
+#*_embeddings.csv
+#*_clusters.csv
+#*_umap_tsne_coords.csv
+#*_metrics.csv
+#grid_summary.csv
+#selected_top*.csv
+
+# Logs or temp data
+*.log
+*.tmp
+*.out
+*.err
+
+# Models or checkpoints (optional)
+*.pt
+*.pth
+
+# Diagrams
+#*.png
